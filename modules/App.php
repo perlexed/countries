@@ -79,7 +79,7 @@ class App {
             'startTime' => !empty($_SESSION['startTime']) ? $_SESSION['startTime'] : null,
             'countriesMatched' => !empty($_SESSION['alreadyMatched']) ? $_SESSION['alreadyMatched'] : [],
             'countriesTotal' => $this->countries->getCountriesCount(),
-            'routerUrl' => 'http://' . $_SERVER['HTTP_HOST'] . (DEBUG ? '/countries/www/index.php' : '/index.php')
+            'routerUrl' => 'http://' . $_SERVER['HTTP_HOST'] . (DEBUG ? '/index.php' : '/count/index.php')
         ];
 
         require_once(__DIR__ . '/../client/index.php');
